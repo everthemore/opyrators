@@ -1,0 +1,2 @@
+A python library that represents many-body operators as strings, e.g. "012003" for
+an operator that has c-dagger on site 2, c on site 3 and a density operator on site 6.
