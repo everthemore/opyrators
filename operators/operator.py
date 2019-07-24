@@ -71,9 +71,7 @@ class operator:
       else:
         newOperator.opterms.append(term1)
 
-    # Cleanup
-    newOperator.cleanup()
-    return newOperator
+    return newOperator.cleanup()
 
   def __sub__(self, other):
      # Subtract two operators
@@ -86,9 +84,7 @@ class operator:
       else:
         newOperator.opterms.append(opterm(term1.coeff*-1, term1.string))
 
-    #newOperator.cleanup()
-    return newOperator
-
+    return newOperator.cleanup()
 
   def __mul__(self, other):
 
