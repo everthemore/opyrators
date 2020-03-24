@@ -8,7 +8,7 @@ setuptools.setup(
     version="0.0.1",
     author="Evert van Nieuwenburg",
     author_email="evert.v.nieuwenburg@gmail.com",
-    description="A minimal package to compute commutators of quantum operators"
+    description="Compute commutators of quantum operators",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/everthemore/opyrators",
