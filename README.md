@@ -4,7 +4,7 @@ Opyrators (pronounced the same way as the word 'operators') is a lightweight pyt
 For example, the fermionic string "012003" stands for
 a 6-site operator formed by a creation operator on site 2, an annihilation operator on site 3, a density operator on site 6 and identity operators on the rest.
 
-In this representation, operator manipulations such as addition and multiplication are easily implemented. That means commutation relations are easy too! [See the example below](#examples).
+In this representation, operator manipulations such as addition and multiplication are easily implemented. That means commutation relations are easy too! [See the example below](#example).
 
 ## Example
 Here is a quick example showing some of the basic features of fermionic opyrators.

@@ -1,5 +1,5 @@
 import unittest
-from ..operators.operator import *
+from ..opyrators.fermions import *
 
 class optermTest(unittest.TestCase):
     def setUp(self):
