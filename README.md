@@ -2,31 +2,13 @@
 Opyrators (pronounced the same way as the word 'operators') is a lightweight python package that represents many-body fermionic and spin operators as strings.
 
 For example, the fermionic string "012003" stands for
-a 6-site operator formed by a creation operator on site 2, an annihilation operator on site 3, a density operator on site 6 and identity operators on the rest. [See an example use below](#examples).
+a 6-site operator formed by a creation operator on site 2, an annihilation operator on site 3, a density operator on site 6 and identity operators on the rest.
 
-In this representation, operator manipulations such as addition and multiplication are easily implemented. That means commutation relations are easy too! For example:
+In this representation, operator manipulations such as addition and multiplication are easily implemented. That means commutation relations are easy too! [See the example below](#examples).
 
-<img src="https://latex.codecogs.com/svg.latex?[c^\dagger_2 n_3 c_4, c_1 n_2 c^\dagger_4] = \underbrace{[\texttt{0132},\texttt{2301}] = \texttt{2133}}_{\textrm{use opyrators!}} = c_1c^\dagger_2n_3n_4"/>
+## Example
+Here is a quick example showing some of the basic features of fermionic opyrators.
 
-Opyrators has a few extra features, such as automatically keeping track of the extent/range of operator terms (the max distance between non-trivial operators), which is very useful for implementing flow equations based on operators.
-
-## Spins
-For spin-1/2 operators, the encoding works as follows:
-* 0 = Identity operator
-* 1 = Pauli-X operator
-* 2 = Pauli-Y operator
-* 3 = Pauli-Z operator
-
-An operator with X on site 2, Y on site 4 and Z on site 5, in a system of 8 sites, hence would be "01023000".
-
-## Fermions
-For particles, the encoding works as follows:
-* 0 = Identity operator
-* 1 = Creation operator
-* 2 = Annihilation operator
-* 3 = Density operator
-
-## Examples
 ```python
 # Import the fermion operators.
 from opyrators.fermions import *
@@ -51,3 +33,20 @@ print(opC)
 # Term 4: 0.442 003333
 # Term 5: 0.442 300333
 ```
+
+## Encodings
+### Spins
+For spin-1/2 operators, the encoding works as follows:
+* 0 = Identity operator
+* 1 = Pauli-X operator
+* 2 = Pauli-Y operator
+* 3 = Pauli-Z operator
+
+An operator with X on site 2, Y on site 4 and Z on site 5, in a system of 8 sites, hence would be "01023000".
+
+### Fermions
+For particles, the encoding works as follows:
+* 0 = Identity operator
+* 1 = Creation operator
+* 2 = Annihilation operator
+* 3 = Density operator
