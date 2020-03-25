@@ -6,7 +6,7 @@ a 6-site operator formed by a creation operator on site 2, an annihilation opera
 
 In this representation, operator manipulations such as addition and multiplication are easily implemented. That means commutation relations are easy too! For example:
 
-$$ [c^\dagger_2 n_3 c_4, c_1 n_2 c^\dagger_4] = \underbrace{[\texttt{0132},\texttt{2301}] = \texttt{2133}}_{\textrm{use opyrators!}} = c_1c^\dagger_2n_3n_4$$
+<img src="https://latex.codecogs.com/svg.latex?[c^\dagger_2 n_3 c_4, c_1 n_2 c^\dagger_4] = \underbrace{[\texttt{0132},\texttt{2301}] = \texttt{2133}}_{\textrm{use opyrators!}} = c_1c^\dagger_2n_3n_4"/>
 
 Opyrators has a few extra features, such as automatically keeping track of the extent/range of operator terms (the max distance between non-trivial operators), which is very useful for implementing flow equations based on operators.
 
