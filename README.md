@@ -6,6 +6,11 @@ a 6-site operator formed by a creation operator on site 2, an annihilation opera
 
 In this representation, operator manipulations such as addition and multiplication are easily implemented. That means commutation relations are easy too! [See the example below](#example).
 
+## Installation
+```python
+pip install opyrators
+```
+
 ## Example
 Here is a quick example showing some of the basic features of fermionic opyrators.
 
