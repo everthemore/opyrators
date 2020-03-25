@@ -277,12 +277,3 @@ class opterm:
 
     def __str__(self):
         return "Term 0: {0} {1}".format(self.coeff, self.string)
-
-A = opterm(1.3, "101220")  # Scalar prefactor 1.3
-B = opterm(0.34, "202113")  # Scalar prefactor 0.34
-# Construct two separate operators, both with only one
-# term each
-opA = operator([A])
-opB = operator([B])
-opC = opA * opB - opB * opA
-print(opC)
